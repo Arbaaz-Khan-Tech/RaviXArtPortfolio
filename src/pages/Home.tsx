@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from 'motion/react';
-import { ArrowDown, ArrowRight, Coffee, Play } from 'lucide-react';
+import { ArrowDown, ArrowRight, Coffee, Instagram, Play } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { RevealText } from '../components/RevealText';
@@ -258,33 +258,41 @@ const PortfolioScroll = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1, duration: 0.6 }}
-            className={`flex-none snap-start group cursor-pointer block ${item.type === 'instagram' ? 'w-[60vw] md:w-[280px]' : 'w-[85vw] md:w-[calc(50%-1rem)]'}`}
+            className="flex-none snap-start group cursor-pointer block w-[85vw] md:w-[calc(50%-1rem)]"
           >
-            {item.type === 'youtube' ? (
-              <div className="aspect-video bg-white/5 rounded-lg overflow-hidden mb-6 relative">
-                <img
-                  src={`https://img.youtube.com/vi/${item.id}/maxresdefault.jpg`}
-                  alt={item.title}
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform">
-                    <Play fill="white" size={24} />
+            <div className="aspect-video bg-white/5 rounded-lg overflow-hidden mb-6 relative">
+              {item.type === 'youtube' ? (
+                <>
+                  <img
+                    src={`https://img.youtube.com/vi/${item.id}/maxresdefault.jpg`}
+                    alt={item.title}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-16 h-16 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform">
+                      <Play fill="white" size={24} />
+                    </div>
                   </div>
-                </div>
-              </div>
-            ) : (
-              <div className="aspect-[9/16] bg-white/5 rounded-lg overflow-hidden mb-6 relative">
-                <iframe
-                  src={`https://www.instagram.com/reel/${item.id}/embed/`}
-                  title={item.title}
-                  className="absolute inset-0 w-full h-full border-0"
-                  allowFullScreen
-                />
-              </div>
-            )}
+                </>
+              ) : (
+                <>
+                  <iframe
+                    src={`https://www.instagram.com/reel/${item.id}/embed/`}
+                    title={item.title}
+                    className="absolute border-0 w-full pointer-events-none"
+                    style={{ height: '300%', top: '-45%' }}
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/10">
+                    <div className="w-16 h-16 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform">
+                      <Instagram size={24} className="text-white" />
+                    </div>
+                  </div>
+                </>
+              )}
+            </div>
             <div className="border-t border-white/10 pt-4">
             </div>
           </motion.a>
