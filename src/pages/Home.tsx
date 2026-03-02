@@ -119,15 +119,15 @@ const Hero = () => {
 
 const FreeResources = () => {
   const resources = [
-    { image: "/2272852.jpg", link: "https://drive.google.com/drive/folders/1ws-lJdaDuYZ2iOFXV3KxYMek9SaPz8JW?usp=sharing" },
-    { image: "https://picsum.photos/seed/res2/400/400", link: "https://drive.google.com/drive/folders/1hFs9L6-3D_bK2seOv2hv_W1QkKCAgB8K?usp=sharing" },
-    { image: "https://picsum.photos/seed/res3/400/400", link: "https://drive.google.com/drive/folders/10BN7MTnNA-oPmV1GM1B2m-kAVoEbGN9V?usp=sharing" },
-    { image: "https://picsum.photos/seed/res4/400/400", link: "https://drive.google.com/drive/folders/19hRVU_9YneINDNMq0yIG9jMDUyjoGJbj?usp=sharing" },
-    { image: "https://picsum.photos/seed/res5/400/400", link: "https://drive.google.com/drive/folders/19hRVU_9YneINDNMq0yIG9jMDUyjoGJbj?usp=sharing" },
-    { image: "https://picsum.photos/seed/res6/400/400", link: "https://drive.google.com/drive/folders/1fbFobzGgXAZsZbkwOVfYV0KlA8HHgN5z?usp=sharing" },
-    { image: "https://picsum.photos/seed/res7/400/400", link: "https://drive.google.com/drive/folders/1qDe7EqC0QyckyhNql7LnNABJCzIaVXys?usp=sharing" },
-    { image: "https://picsum.photos/seed/res8/400/400", link: "https://drive.google.com/drive/folders/1DMtdMYA7RanY1c9AoJGWi7pc9AXK83Sw?usp=sharing" },
-    { image: "https://picsum.photos/seed/res9/400/400", link: "https://drive.google.com/drive/folders/1IHe_4mSP7ABV4FgVGYGK5upuT0f9TfEf?usp=sharing" },
+    { image: "/Queen AE.jpg.jpeg", link: "https://drive.google.com/drive/folders/1ws-lJdaDuYZ2iOFXV3KxYMek9SaPz8JW?usp=sharing" },
+    { image: "/King Pr.jpg.jpeg", link: "https://drive.google.com/drive/folders/1hFs9L6-3D_bK2seOv2hv_W1QkKCAgB8K?usp=sharing" },
+    { image: "/Knight PS.jpg.jpeg", link: "https://drive.google.com/drive/folders/10BN7MTnNA-oPmV1GM1B2m-kAVoEbGN9V?usp=sharing" },
+    { image: "/King and Queen.png", link: "https://drive.google.com/drive/folders/19hRVU_9YneINDNMq0yIG9jMDUyjoGJbj?usp=sharing" },
+    { image: "/King.jpg.jpeg", link: "https://drive.google.com/drive/folders/19hRVU_9YneINDNMq0yIG9jMDUyjoGJbj?usp=sharing" },
+    { image: "/Queen.jpg.jpeg", link: "https://drive.google.com/drive/folders/1fbFobzGgXAZsZbkwOVfYV0KlA8HHgN5z?usp=sharing" },
+    { image: "/Bishop.jpg.jpeg", link: "https://drive.google.com/drive/folders/1qDe7EqC0QyckyhNql7LnNABJCzIaVXys?usp=sharing" },
+    { image: "/Knight.jpg.jpeg", link: "https://drive.google.com/drive/folders/1DMtdMYA7RanY1c9AoJGWi7pc9AXK83Sw?usp=sharing" },
+    { image: "/rook.jpg.jpeg", link: "https://drive.google.com/drive/folders/1IHe_4mSP7ABV4FgVGYGK5upuT0f9TfEf?usp=sharing" },
 
   ];
 
@@ -156,9 +156,7 @@ const FreeResources = () => {
             className="aspect-square overflow-hidden rounded-lg relative group cursor-pointer block"
           >
             <LiquidImage src={resource.image} alt={`Resource ${index + 1}`} className="w-full h-full" />
-            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <span className="text-white font-sans text-xs uppercase tracking-widest border border-white/50 px-4 py-2 rounded-full backdrop-blur-sm">Download</span>
-            </div>
+            
           </motion.a>
         ))}
       </div>
