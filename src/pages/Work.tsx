@@ -17,10 +17,9 @@ const artworks: Artwork[] = [
   { id: 4, src: "/IMG_3961.jpg", alt: "Artwork IV", orientation: "portrait" },
   { id: 5, src: "/IMG_3962.jpg", alt: "Artwork V", orientation: "portrait" },
   { id: 6, src: "/IMG_3965.jpg", alt: "Artwork VI", orientation: "portrait" },
-    { id: 7, src: "/IMG_20200919_102434_HHT_Original (1).jpg", alt: "Artwork VIII", orientation: "landscape" },
+    { id: 7, src: "/IMG_20200919_102434_HHT_Original (1).jpg", alt: "Artwork VII", orientation: "landscape" },
 
-  { id: 8, src: "/IMG_20200514_181839_HDR-01_Original.jpg", alt: "Artwork VII", orientation: "landscape" },
-  { id: 8, src: "/IMG_20200919_102434_HHT_Original (1).jpg", alt: "Artwork VIII", orientation: "landscape" },
+  { id: 8, src: "/IMG_20200514_181839_HDR-01_Original.jpg", alt: "Artwork VIII", orientation: "landscape" },
 ];
 
 const Lightbox = ({ artwork, onClose }: { artwork: Artwork; onClose: () => void }) => {
