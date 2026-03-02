@@ -10,10 +10,9 @@ const Hero = () => {
   const { scrollY } = useScroll();
   const y1 = useTransform(scrollY, [0, 500], [0, 200]);
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
-  const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-center px-6 pt-32 pb-24 overflow-hidden">
+    <section className="relative flex flex-col items-center px-6 pt-32 pb-24 overflow-hidden">
       <motion.div
         style={{ y: y1, opacity }}
         className="text-center z-10 max-w-7xl mx-auto w-full flex flex-col items-center"
@@ -71,45 +70,23 @@ const Hero = () => {
             />
           </div>
         </motion.div>
+      </motion.div>
 
-        {/* Showreel */}
-        <div className="relative w-full max-w-4xl aspect-video overflow-hidden shadow-2xl mb-12">
-          {isPlaying ? (
-            <iframe
-              src="https://www.youtube.com/embed/iTL9WKZdSoA?autoplay=1&rel=0"
-              title="Showreel "
-              className="absolute inset-0 w-full h-full"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          ) : (
-            <button
-              onClick={() => setIsPlaying(true)}
-              className="relative w-full h-full group cursor-pointer block"
-            >
-              <img
-                src="https://img.youtube.com/vi/iTL9WKZdSoA/maxresdefault.jpg"
-                alt="Showreel "
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/20 flex items-center justify-center group-hover:bg-black/10 transition-colors">
-                <div className="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/50 group-hover:scale-110 transition-transform duration-300">
-                  <Play fill="white" className="text-white ml-1" size={32} />
-                </div>
-              </div>
-              <div className="absolute bottom-6 left-6 text-white text-left">
-                <h2 className="font-sans text-3xl">Showreel </h2>
-              </div>
-            </button>
-          )}
-        </div>
-        
-        {/* <RevealText 
-          text="Artist & Visual Designer" 
-          className="font-sans text-xs md:text-sm uppercase tracking-[0.3em] text-text-primary mb-6 justify-center"
-          delay={0.6}
-        /> */}
-
+      {/* Showreel — outside parallax so it doesn't fade */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="relative w-full max-w-4xl aspect-video overflow-hidden shadow-2xl mb-12 z-10"
+      >
+        <iframe
+          src="https://www.youtube.com/embed/iTL9WKZdSoA?rel=0"
+          title="Showreel"
+          className="absolute inset-0 w-full h-full"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
       </motion.div>
 
       <motion.p
@@ -237,7 +214,7 @@ const PortfolioScroll = () => {
   ];
 
   return (
-    <section className="py-32 overflow-hidden bg-[#111] text-[#F5F1EB]">
+    <section className="pt-32 pb-8 overflow-hidden bg-[#111] text-[#F5F1EB]">
       <div className="px-6 md:px-12 mb-16 flex justify-between items-end max-w-[1400px] mx-auto">
         <div>
           <h2 className="font-sans text-4xl md:text-6xl mb-4 tracking-[0.15em]">PORTFOLIO EXAMPLES</h2>
@@ -319,7 +296,7 @@ const ThumbnailGrid = () => {
   ];
 
   return (
-    <section className="py-32 px-6 md:px-12 bg-[#111] text-[#F5F1EB]">
+    <section className="pt-8 pb-32 px-6 md:px-12 bg-[#111] text-[#F5F1EB]">
       <div className="mb-16 text-center max-w-[1400px] mx-auto">
         <h2 className="font-sans text-4xl md:text-6xl mb-4 tracking-[0.15em]">THUMBNAILS</h2>
         <p className="font-sans text-sm opacity-60 tracking-widest">YouTube thumbnail designs</p>
