@@ -81,7 +81,7 @@ const Hero = () => {
         className="relative w-full max-w-4xl aspect-video overflow-hidden shadow-2xl mb-12 z-10"
       >
         <iframe
-          src="https://www.youtube.com/embed/iTL9WKZdSoA?rel=0"
+          src="https://www.youtube.com/embed/7vbO1OH1PrU?rel=0"
           title="Showreel"
           className="absolute inset-0 w-full h-full"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -119,15 +119,15 @@ const Hero = () => {
 
 const FreeResources = () => {
   const resources = [
-    { image: "/Queen AE.jpg.jpeg", link: "https://drive.google.com/drive/folders/1ws-lJdaDuYZ2iOFXV3KxYMek9SaPz8JW?usp=sharing" },
-    { image: "/King Pr.jpg.jpeg", link: "https://drive.google.com/drive/folders/1hFs9L6-3D_bK2seOv2hv_W1QkKCAgB8K?usp=sharing" },
-    { image: "/Knight PS.jpg.jpeg", link: "https://drive.google.com/drive/folders/10BN7MTnNA-oPmV1GM1B2m-kAVoEbGN9V?usp=sharing" },
-    { image: "/King and Queen.png", link: "https://drive.google.com/drive/folders/19hRVU_9YneINDNMq0yIG9jMDUyjoGJbj?usp=sharing" },
-    { image: "/King.jpg.jpeg", link: "https://drive.google.com/drive/folders/19hRVU_9YneINDNMq0yIG9jMDUyjoGJbj?usp=sharing" },
-    { image: "/Queen.jpg.jpeg", link: "https://drive.google.com/drive/folders/1fbFobzGgXAZsZbkwOVfYV0KlA8HHgN5z?usp=sharing" },
-    { image: "/Bishop.jpg.jpeg", link: "https://drive.google.com/drive/folders/1qDe7EqC0QyckyhNql7LnNABJCzIaVXys?usp=sharing" },
-    { image: "/Knight.jpg.jpeg", link: "https://drive.google.com/drive/folders/1DMtdMYA7RanY1c9AoJGWi7pc9AXK83Sw?usp=sharing" },
-    { image: "/rook.jpg.jpeg", link: "https://drive.google.com/drive/folders/1IHe_4mSP7ABV4FgVGYGK5upuT0f9TfEf?usp=sharing" },
+    { image: "/Queen AE.jpg.jpeg", link: "https://drive.google.com/drive/folders/1H7Q9fLkc10F2JvRdsLvBFfgXsUECieyV?usp=sharing" },
+    { image: "/King Pr.jpg.jpeg", link: "https://drive.google.com/drive/folders/1QkmWe4NvOEWY9lS9b1QiKycU5CFf5cEd?usp=sharing" },
+    { image: "/Knight PS.jpg.jpeg", link: "https://drive.google.com/drive/folders/1Hf2_FS3dLi3AjGiOhA6TLM1xqNDfWIyI?usp=sharing" },
+    { image: "/King and Queen.png", link: "https://drive.google.com/drive/folders/1WO3IB1llKiGQ9q1DPgdHvRf-AmEBu3AB?usp=sharing" },
+    { image: "/King.jpg.jpeg", link: "https://drive.google.com/drive/folders/1T9HQQUkyIZ5t8wyOS1d9N2rZzYnH25m5?usp=sharing" },
+    { image: "/Queen.jpg.jpeg", link: "https://drive.google.com/drive/folders/1-pUhXrqBA3cRQetds-F_vqDbFwaeJXPH?usp=sharing" },
+    { image: "/Bishop.jpg.jpeg", link: "https://drive.google.com/drive/folders/12y-508-0MFVbpvGDXMDurXO40IAH2qxn?usp=sharing" },
+    { image: "/Knight.jpg.jpeg", link: "https://drive.google.com/drive/folders/1U-UCS-ErvYLQXVzHodDlUsyENHkbBy9O?usp=sharing" },
+    { image: "/rook.jpg.jpeg", link: "https://drive.google.com/drive/folders/1AtXKGdOHJ6wDMm-9zAt3gFCJvf9AW2JP?usp=sharing" },
 
   ];
 
