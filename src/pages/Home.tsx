@@ -289,8 +289,11 @@ const ThumbnailGrid = () => {
     { image: "/Thumb8.jpg", title: "Thumbnail 8" },
     { image: "/Thumb9.jpg", title: "Thumbnail 9" },
     { image: "/Thumb10.jpg", title: "Thumbnail 10" },
-      { image: "/Thumb11.jpg", title: "Thumbnail 12" },
-        { image: "/Thumb12.jpg", title: "Thumbnail 12" },
+    { image: "/Thumb11.jpg", title: "Thumbnail 11" },
+    { image: "/Thumb12.jpg", title: "Thumbnail 12" },
+    { image: "/Thumb13.jpg", title: "Thumbnail 13" },
+    { image: "/Thumb14.jpg", title: "Thumbnail 14" },
+    
   ];
 
   return (
